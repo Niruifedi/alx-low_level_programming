@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(c);
 
-		c++:
+		c++;
 	}
 
 	c = 'A';
