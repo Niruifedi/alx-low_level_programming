@@ -8,20 +8,20 @@
  */
 int main (void)
 {
-	char c = 'a'
+	char c = 'a';
 	
 	while (c <= 'z')
 	{
 		if (c != 'e' && c != 'q')
 		{
-			putcahr(c);
+			putcahr (c);
 
 		}
 
 		c++;
 	}
 
-	putchar('\n');
+	putchar ('\n');
 
 	return (0);
 }
