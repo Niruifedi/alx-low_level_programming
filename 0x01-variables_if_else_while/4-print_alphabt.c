@@ -6,15 +6,16 @@
  * the exception of 'q' and 'e'.
  * Return: 0
  */
-int main(void)
+int main (void)
 {
-	char c = 'a';
-
+	char c = 'a'
+	
 	while (c <= 'z')
 	{
 		if (c != 'e' && c != 'q')
 		{
-			putchar(c);
+			putcahr(c);
+
 		}
 
 		c++;
