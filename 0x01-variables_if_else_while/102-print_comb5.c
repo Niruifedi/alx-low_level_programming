@@ -19,7 +19,7 @@ int main(void)
 	int i, j;
 	int a, b, c, d;
 
-	for (i =0; i < 100; i++)
+	for (i = 0; i < 100; i++)
 	{
 		a = i / 10; /*doubles fnum*/
 		b = i % 10; /*singles fnum*/
@@ -29,7 +29,7 @@ int main(void)
 			c = j / 10; /*doubles snum*/
 			d = j % 10; /*singles snum*/
 
-			if (a < c || (a == c && b <d))
+			if (a < c || (a == c && b < d))
 			{
 				putchar(a + '0');
 				putchar(b + '0');
