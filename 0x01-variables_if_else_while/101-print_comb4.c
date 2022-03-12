@@ -20,7 +20,7 @@ int main(void)
 	{
 		j = i / 100; /*hundreds*/
 		k = (i / 10) % 10; /*tens*/
-		i = i % 10; /*singles*/
+		l = i % 10; /*singles*/
 
 		if (j < k && k < l)
 		{
