@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-int main()
+int main(void)
 {
 	int i;
 	char msg[9] = "_putchar";
