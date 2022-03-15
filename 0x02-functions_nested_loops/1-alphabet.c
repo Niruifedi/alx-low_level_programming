@@ -2,6 +2,7 @@
 
 /**
  * main - check the code
+ * Description: this program prints out the alphabet in lowercase
  *
  * Return: Always 0.
  */
