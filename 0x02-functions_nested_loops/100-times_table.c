@@ -13,9 +13,9 @@ void print_times_table(int n)
 
 	if (n >= 0 && n < 15)
 	{
-		for (row = o; row <= n; row++)
+		for (row = 0; row <= n; row++)
 		{
-			for (column = o; column <= n; column++)
+			for (column = 0; column <= n; column++)
 			{
 				product = row * column;
 
