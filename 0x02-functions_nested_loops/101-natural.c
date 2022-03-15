@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int stsrt_num, end_num, total;
+	int start_num, end_num, total;
 
 	end_num = 1024;
 	total = 0;
