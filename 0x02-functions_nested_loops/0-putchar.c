@@ -1,13 +1,22 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
- * main - main block entry
- * Description: this program prints out _putchar.
+ * main - main block
+ * Description: this program prints _putchar without using
+ * the printf function.
  * Return: 0
  */
+
 int main()
 {
-	printf("_putchar\n");
+	int i;
+	char msg[9] = "_putchar";
+
+	for (i = 0; i < 8; i++)
+	{
+		putchar(msg[i]);
+	}
+	putchar("\n");
 
 	return 0;
 }
