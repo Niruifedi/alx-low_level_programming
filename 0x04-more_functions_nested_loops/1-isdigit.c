@@ -3,10 +3,15 @@
 /**
  * _isdigit - checks for a digit (0 through 9)
  * @c: int to be checked
- * Return: 1 if c is a digit, 0 otherwise
+ * Return: 1 if c is a digit
+ * Return: 0 if it isn't
  */
 
 int _isdigit(int c)
 {
-	return ( c >= '0' && c <= '9');
+	if ( c >= '0' && c <= '9')
+		return (1);
+
+	else 
+		return (0);
 }
