@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
  * main - using is upper function
@@ -10,5 +9,5 @@
 
 int _isupper(int c)
 {
-	return (c >= A && c <= a);
+	return (c >= 'A' && c <= 'Z');
 }
