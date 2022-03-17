@@ -13,10 +13,10 @@ int main(void)
 	int c;
 
 	c = 'A';
-	_putchar(c, _isupper(c));
+	_putchar(char c, _isupper(c));
 
 	c = 'a';
-	_putchar(c, _isupper(c));
+	_putchar(char c, _isupper(c));
 
 	return (0);
 }
