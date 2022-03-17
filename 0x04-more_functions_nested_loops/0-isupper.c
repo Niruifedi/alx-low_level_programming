@@ -5,19 +5,10 @@
  * main - using is upper function
  * _isupper: this fucntion checks for uppercase character and prints it out
  * @c: c is an ascii value
- * Return: 1 if c is uppercase.
+ * Return: 1 or 0
  */
 
-int main(void)
+int _isupper(int c)
 {
-	int c;
-
-	c = 'A';
-	_putchar(char c, _isupper(c));
-
-	c = 'a';
-	_putchar(char c, _isupper(c));
-
-	return (0);
+	return (c >= A && c <= a);
 }
-
