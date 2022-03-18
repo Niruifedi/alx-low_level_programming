@@ -2,8 +2,7 @@
 
 /**
  * print_triangle - check for a digit
- * @size: integer type
- * Return: void
+ * @size: size of triangle
  */
 void print_triangle(int size)
 {
