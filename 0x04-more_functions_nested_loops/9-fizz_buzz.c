@@ -1,7 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 
-
+/**
+ * main - the function prints numbers from 1 to 100
+ * for multiple of three print Fizz instead of a  number
+ * and for the multiples of five print Buzz
+ * for numbers which are multipls of both three and five
+ * print FizzBuzz.
+ * Return: Always 0
+ */
 int main(void)
 {
 	int i;
