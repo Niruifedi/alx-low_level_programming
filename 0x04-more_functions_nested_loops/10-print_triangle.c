@@ -18,16 +18,16 @@ while (n < size)
 s = (size -1);
 while (s > n)
 {
-_putchar (' ');
+_putchar(' ');
 s--;
 }
 s = 0;
 while (s <= n)
 {
-_putchar ('#');
+_putchar('#');
 s++;
 }
-_putchar ('\n');
+_putchar('\n');
 n++;
 }
 }
