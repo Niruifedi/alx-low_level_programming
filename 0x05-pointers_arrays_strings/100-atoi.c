@@ -19,7 +19,7 @@ int _atoi(char *s)
 			num = (num * 10) + (*s - '0');
 
 		else if (num > 0)
-			brek;
+			break;
 
 	} while (*s++);
 
