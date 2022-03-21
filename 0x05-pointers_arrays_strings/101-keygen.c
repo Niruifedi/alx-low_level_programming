@@ -15,10 +15,10 @@ int main(void)
 
 	while (sum <= 2645)
 	{
-		c = rand() % 127;
+		c = rand() % 128;
 		sum += c;
 		putchar(c);
 	}
-	putchar(2773 - sum);
+	putchar(2772 - sum);
 	return (0);
 }
