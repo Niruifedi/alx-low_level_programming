@@ -22,6 +22,4 @@ void rev_string(char *s)
 	temp = *start;
 	*start = *end;
 	*end = temp;
-
-	return (temp);
 }
