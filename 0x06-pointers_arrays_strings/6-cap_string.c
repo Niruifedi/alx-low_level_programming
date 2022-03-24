@@ -8,7 +8,7 @@
  */
 char *cap_string(char *str)
 {
-	int a = 0;
+	int a = 0, i;
 	int cspc = 13;
 	char spc[] = {' ', 't', '\n', ';', '.', '!', '?', '"', '(', ')','{', '}'};
 
