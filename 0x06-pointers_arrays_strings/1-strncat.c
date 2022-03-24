@@ -10,7 +10,7 @@
  *
  * Return: pointer of dest.
  */
-char *_strncat(char *dest, char *str, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	strncat(dest, src, n);
 
