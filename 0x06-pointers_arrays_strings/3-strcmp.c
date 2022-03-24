@@ -5,7 +5,6 @@
  * _strcmp - this function compares 2 strings.
  * @s1: string to be compared
  * @s2: string to be compared
- * @result: int variable to store comparison.
  *
  * Return: result.
  */
