@@ -3,7 +3,6 @@
 
 /**
  * _strncat - concatenates and use most n bytes from src
- * src does not need to be null-terminated if it contains n
  * @dest:destination to append to
  * @src: string to append
  * @n: integer value to use.
