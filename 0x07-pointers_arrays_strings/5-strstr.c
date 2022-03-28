@@ -5,7 +5,8 @@
  * _strstr - function finds the frist occurence of the substring
  * @needle: pointer to string containing character to match
  * @haystack: pointer to a string to be scanned
- * Return: pointer to substring or NULL
+ * Return: pointer to the beginnig of located substring or
+ * NULL if the substring is not found
  */
 char *_strstr(char *haystack, char *needle)
 {
