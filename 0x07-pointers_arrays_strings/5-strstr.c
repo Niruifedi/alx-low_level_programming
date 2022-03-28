@@ -1,23 +1,35 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _strstr - function finds the frist occurence of the substring
- * @needle: pointer to string containing character to match
- * @haystack: pointer to a string to be scanned
- * Return: pointer to the beginnig of located substring or
- * NULL if the substring is not found
+ * _strstr - a function that locates a substring
+ * @haystack: locate a substring
+ * @needle: substring to locate
+ *
+ * Return: pointer to the beginning of the located substring,
+ * or NULL, if substring is not found
  */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack != '\0')
+	char *h = haystack;
+	char *n = needle;
+
+	while (*h)
 	{
-		if ((*haystack == *needle) && strchr(haystack, *needle))
+		n = needle;
+		h = haystack;
+		while (*n)
 		{
-			return (haystack);
+			if (*h == *n)
+			{
+				n++;
+				h++;
+			}
+			else
+				break;
 		}
+		if (*n == '\0')
+			return (haystack);
 		haystack++;
 	}
-
-	return (NULL);
+	return (0);
 }
