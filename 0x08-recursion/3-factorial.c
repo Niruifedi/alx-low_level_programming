@@ -14,7 +14,7 @@ int factorial(int n)
 		return (-1);
 	}
 
-	for (i = 1; i <= num; i++)
+	for (i = 1; i <= n; i++)
 		f = f * i;
 	return (f);
 }
