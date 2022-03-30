@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _pow-rescursion - calculates value of x raised to the power of y
+ * _pow_rescursion - calculates value of x raised to the power of y
  * @x: given number
  * @y: exponent
  * Return: value of x raised to the power of y
@@ -17,5 +17,5 @@ int _pow_recursion(int x, int y)
 	{
 		return (1);
 	}
-	return (x * _pow_recursion(x, y -1));
+	return (x * _pow_recursion(x, y - 1));
 }
