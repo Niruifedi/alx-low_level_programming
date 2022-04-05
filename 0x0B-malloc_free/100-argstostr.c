@@ -41,3 +41,4 @@ char *argstostr(int ac, char **av)
 	}
 	strDup[k] = '\0';
 	return (strDup);
+}
