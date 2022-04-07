@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	i = j = 0;
 
-	while (s1[i] !'\0')
+	while (s1[i] != '\0')
 	{
 		ptr[i] = s1[i];
 		i++;
