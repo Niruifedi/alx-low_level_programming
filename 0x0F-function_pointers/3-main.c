@@ -5,8 +5,8 @@
 /**
  * main - Principal
  *
- * @ac: count arguments
- * @ag: array
+ * @arc: count arguments
+ * @arg: array
  *
  * Return: Always 0
  */
