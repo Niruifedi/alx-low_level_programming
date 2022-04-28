@@ -1,2 +1,0 @@
-<h1>SINGLY LINKED LISTS</h1>
-
