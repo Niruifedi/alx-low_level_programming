@@ -24,7 +24,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		*head = enode;
 		enode->prev = NULL;
-		return enode;
+		return (enode);
 	}
 	temp = *head;
 	while (temp->next != NULL)
