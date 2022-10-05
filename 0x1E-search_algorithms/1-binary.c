@@ -1,60 +1,60 @@
 #include "search_algos.h"
+/**
+* pri_arr - prints array
+* array = array
+* start= start point
+* end = ending point
+* Return nothing
+**/
+void pri_arr(int *array, size_t start, size_t end)
+{
+	unsigned int i;
+
+	printf("Searching in array: ");
+	for (i = start; i < end; i++)
+	{
+		printf("%d, ", array[i]);
+	}
+	printf("%d\n", array[end]);
+}
 
 /**
- * binary_search - searches for a value in a sorted array
- * @array: pointer to the first element of the array
- * @size: numbers of element in the array
- * @value: value to search for in the array
- * Return: value on success
- */
-
+* binary_search - a function that searches for a value in a
+* sorted array of integers using the Binary search algorithm
+* array: pointer to the first element of the array
+* size: is the number of elements in array
+* value: value to search for
+* Return: index OR -1
+**/
 int binary_search(int *array, size_t size, int value)
 {
-    size_t l = 0;
-    size_t r = size - 1;
-    size_t mid, tmp1, tmp2;
+	unsigned int left = 0, right;
+	int middle;
 
-    
-    if (array == NULL)
-        return(-1);
-    
-    while (l < r)
-    {
-        tmp1 = l;
-        tmp2 = r;
+	right = size - 1;
 
-        printf("Searching in array: ");
-        while (tmp1 < tmp2)
-        {
-            printf("%d, ", array[tmp1]);
-            if (tmp1 < tmp2)
-            {
-                printf(",");
-            }
-            else
-            printf("\n");
-            tmp1++;
-        }
-        for (l = 0; l < size; l++)
-        {
-            printf("Searching in array: %ld\n", l);
-            mid = (l + r) / 2;
-
-            if (value == array[mid])
-            {
-                return (mid);
-            }
-            else if (value < array[mid])
-            {
-                r = mid - 1;
-            }
-            else if (value > array[mid])
-            {
-                l = mid + 1;
-            }
-        }
-        
-    }
-
-    return (-1);
+	if (array == NULL)
+		return (-1);
+	if (size == 1)
+	{
+		return (array[left]);
+	}
+	while (right >= left)
+	{
+		if (left == 0 && right == 0)
+			return (-1);
+		pri_arr(array, left, right);
+		middle = (right + left) / 2;
+		if (array[middle] == value)
+			return (array[middle]);
+		else if (array[middle] < value)
+		{
+			left = middle + 1;
+		}
+		else if (array[middle] > value)
+		{
+			right = middle;
+		}
+	}
+	return (-1);
 }
